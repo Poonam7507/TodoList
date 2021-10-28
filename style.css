@@ -1,0 +1,177 @@
+body{
+    background: linear-gradient(to right ,rgb(245, 106, 129,0.5),rgb(255, 255, 255,0.45),rgb(102, 170, 216,0.55)),url("/note3.jpg");
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+}
+.navbar div{
+    background-color: blanchedalmond;
+   padding-left: 1%;
+   padding-right: 1%;
+   font-size: 1vw;
+   border-radius: 50%;
+   outline: 2px solid white;
+    margin-inline: 2%;
+}
+.outerbox{
+    margin-top: 2%;
+    position: relative;
+    border-radius: 10px;
+    padding: 2%;
+    height:25vw;
+    width: 100%;
+    max-width: 40%;
+    margin: auto;
+    background:linear-gradient(to bottom,brown,white,brown,white,brown);
+    
+}
+.outerbox h3{
+    text-align: right;
+    text-shadow: 2px 2px 2px burlywood;
+}
+.outerbox img{
+    border-radius: 20px;
+}
+.outerbox button{
+    /* margin: 30%; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.8vw;
+    padding: 1%;
+    color: white;
+    background-color: brown;
+}
+.outerbox button:active{
+    background-color: rgb(177, 78, 78);
+
+}
+.outerbox h1{
+    text-align: center;
+    font-size: 2vw;
+
+
+}
+.outerbox p{
+    text-align: center;
+    font-size: 1.6vw;
+}
+.container{
+    position: relative;
+    display: none;
+    height:auto;
+    width: 100%;
+    max-width: 40%;
+    margin: auto;
+    background:linear-gradient(to bottom,brown,white,brown,white,brown);
+
+    box-shadow: 2px 2px 3px 3px brown;
+    border-radius: 20px;
+    margin-top: 2%;
+    
+
+} 
+.container .completebtn{
+    display: none;
+    
+    font-size: 1.3vw;
+    position: absolute;
+    background-color: green;
+    color: white;
+    right: 1%;
+    bottom:1.2%;
+    
+}
+
+.container h1{
+    padding: 1%;
+    text-align: center;
+    font-size: 2vw;
+}
+.container .listitem{
+    max-height: 200px;
+    overflow-y: auto;
+}
+.container .listitem li{
+    position: relative;
+    list-style: none;
+    padding:2%;
+    margin: 12px;
+    height: 18px;
+    width: 80%;
+    font-size: 1.6vw;
+    overflow: hidden;
+    /* text-align: center; */
+     background-color:white;
+     text-transform: uppercase;
+}
+.container li i{
+    color: tomato;
+    position: absolute;
+    right: 1%;
+    font-size: 2vw;
+
+
+}
+.container li i:hover{
+    transform: scale(1.1);
+    color:red;
+    
+}
+.container .list{
+    display: flex;
+    padding: 10%;
+    margin: auto;
+}
+.container .list input{
+    padding: 2%;
+    width: 100%;
+    font-size: 1.6vw;
+    
+
+}
+.container .addbtn{
+    padding: 0 2% 0 2%;
+    font-size: 2vw;
+    color:brown;
+    
+}
+.container .clearbtn{
+    padding: 0;
+  width: 20%;
+  border-radius: 15px;
+  margin-left: 33%;
+  margin-bottom: 12%;
+  font-size: 1.3vw;
+  color: black;
+  background-color: brown;
+  transition:all 0.3s ease-in-out;
+
+  
+}
+.container .clearbtn:hover{
+    background-color: tomato;
+    color: white;
+
+}
+
+
+
+@media screen and (max-width:530px){
+    .outerbox{
+        margin-top: 18%;
+        height: 45vw;
+    }
+    .container{
+        margin-top: 8%;
+        height: 45vw;
+    }
+    .container .listitem{
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .container .listitem li{
+        height: 13%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div onclick="homepage()"> <h2 >Home</h2> </div>
+    </nav>
+    <div class="outerbox">
+        <h1>To Do List</h1>
+        <img src="/img.jpg" alt="" width="50%" height="50%">
+        <h3>Make Things Easier</h3>
+       <button onclick="showlist()"> <p>Organize your work now</p></button>
+
+    </div>
+<div class="container" id="to_do_list">
+    <h1>To Do List</h1>
+    <div class="list">
+        <input type="text" placeholder="Add your task" id="textarea">
+        <input type="text" style="display: none;" id="savetextarea">
+        <button class="addbtn" ><i class="fa fa-plus" ></i></button>
+        <button class="savebtn" onclick="save()" style="display: none;">Save</button>
+    </div>
+    <ul class="listitem">
+
+    </ul>
+    <div class="clearlist">
+<button class="clearbtn"><h3>Clear All</h3></button>
+</div>
+</div>
+
+
+
+<script src="app.js">
+
+</script> 
+
+
+</body>
+
+</html>
